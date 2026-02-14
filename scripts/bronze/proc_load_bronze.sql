@@ -43,7 +43,7 @@ BEGIN
         TRUNCATE TABLE bronze.crm_cust_info;
         RAISE NOTICE '>> Inserting Data Into: bronze.crm_cust_info';
         COPY bronze.crm_cust_info
-        FROM 'C:/Users/mmakh/OneDrive/Desktop/sql-data-warehouse-project-main/datasets/source_crm/cust_info.csv'
+        FROM 'cust_info.csv' -- Put your CSV file path
         WITH (FORMAT csv, HEADER true, DELIMITER ',');
         v_end_time := clock_timestamp();
         RAISE NOTICE '>> Load Duration: %', v_end_time - v_start_time;
@@ -55,7 +55,7 @@ BEGIN
         TRUNCATE TABLE bronze.crm_prd_info;
         RAISE NOTICE '>> Inserting Data Into: bronze.crm_prd_info';
         COPY bronze.crm_prd_info
-        FROM 'C:/Users/mmakh/OneDrive/Desktop/sql-data-warehouse-project-main/datasets/source_crm/prd_info.csv'
+        FROM 'prd_info.csv' -- Put your CSV file path
         WITH (FORMAT csv, HEADER true, DELIMITER ',');
         v_end_time := clock_timestamp();
         RAISE NOTICE '>> Load Duration: %', v_end_time - v_start_time;
@@ -67,7 +67,7 @@ BEGIN
         TRUNCATE TABLE bronze.crm_sales_details;
         RAISE NOTICE '>> Inserting Data Into: bronze.crm_sales_details';
         COPY bronze.crm_sales_details
-        FROM 'C:/Users/mmakh/OneDrive/Desktop/sql-data-warehouse-project-main/datasets/source_crm/sales_details.csv'
+        FROM 'sales_details.csv' -- Put your CSV file path
         WITH (FORMAT csv, HEADER true, DELIMITER ',');
         v_end_time := clock_timestamp();
         RAISE NOTICE '>> Load Duration: %', v_end_time - v_start_time;
@@ -83,7 +83,7 @@ BEGIN
         TRUNCATE TABLE bronze.erp_loc_a101;
         RAISE NOTICE '>> Inserting Data Into: bronze.erp_loc_a101';
         COPY bronze.erp_loc_a101
-        FROM 'C:/Users/mmakh/OneDrive/Desktop/sql-data-warehouse-project-main/datasets/source_erp/LOC_A101.csv'
+        FROM 'LOC_A101.csv' -- Put your CSV file path
         WITH (FORMAT csv, HEADER true, DELIMITER ',');
         v_end_time := clock_timestamp();
         RAISE NOTICE '>> Load Duration: %', v_end_time - v_start_time;
@@ -95,7 +95,7 @@ BEGIN
         TRUNCATE TABLE bronze.erp_cus_az12;
         RAISE NOTICE '>> Inserting Data Into: bronze.erp_cus_az12';
         COPY bronze.erp_cus_az12
-        FROM 'C:/Users/mmakh/OneDrive/Desktop/sql-data-warehouse-project-main/datasets/source_erp/CUST_AZ12.csv'
+        FROM 'CUST_AZ12.csv' -- Put your CSV file path
         WITH (FORMAT csv, HEADER true, DELIMITER ',');
         v_end_time := clock_timestamp();
         RAISE NOTICE '>> Load Duration: %', v_end_time - v_start_time;
@@ -107,7 +107,7 @@ BEGIN
         TRUNCATE TABLE bronze.erp_px_cat_g1v2;
         RAISE NOTICE '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
         COPY bronze.erp_px_cat_g1v2
-        FROM 'C:/Users/mmakh/OneDrive/Desktop/sql-data-warehouse-project-main/datasets/source_erp/PX_CAT_G1V2.csv'
+        FROM 'PX_CAT_G1V2.csv' -- Put your CSV file path
         WITH (FORMAT csv, HEADER true, DELIMITER ',');
         v_end_time := clock_timestamp();
         RAISE NOTICE '>> Load Duration: %', v_end_time - v_start_time;
