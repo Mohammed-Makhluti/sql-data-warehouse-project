@@ -33,8 +33,10 @@ Using advanced PostgreSQL features, I implemented:
 ## 📁 Project Structure
 ```text
 sql-data-warehouse-project/
+├── datasets/         # Raw datasets used for the project (ERP and CRM data)
 ├── scripts/
 │   ├── bronze/       # Table DDL and Bulk Data Loading
 │   ├── silver/       # Data Transformation and Cleaning
 │   └── gold/         # Analytical Views and Final Fact/Dim Tables
+├── samples/          # Exported Report Results (CSV)
 └── docs/             # Database ERD and project documentation
