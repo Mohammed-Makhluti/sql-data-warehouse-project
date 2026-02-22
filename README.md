@@ -26,8 +26,8 @@ Using advanced PostgreSQL features, I implemented:
 - **Advanced SQL Techniques:** Extensive use of **CTEs, Window Functions, and Aggregate Functions**.
 
 ## 🛠️ Tech Stack
-- **Database:** PostgreSQL (Successfully migrated from MS SQL Server logic)
-- **Language:** SQL (PostgreSQL Dialect)
+- **Database:** PostgreSQL
+- **Language:** SQL
 - **Concepts:** ETL/ELT, Data Modeling, Star Schema, Data Cleansing, Customer Segmentation.
 
 ## 📁 Project Structure
