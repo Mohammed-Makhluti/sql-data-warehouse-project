@@ -17,7 +17,7 @@ The project follows a structured data flow to ensure quality and scalability:
    - Star Schema implementation (Fact and Dimension tables).
    - Advanced analytical views designed for executive reporting.
 
-![Data Flow Diagram](./images/data_flow_Diagram.drawio.png)
+![Data Flow Diagram](./docs/data_flow_Diagram.drawio.png)
 
 ## 📊 Key Analytics & Business Logic
 Using advanced PostgreSQL features, I implemented:
